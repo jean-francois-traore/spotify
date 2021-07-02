@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom';
+import { BrowserRouter as Router, NavLink} from 'react-router-dom';
 import '../styles/Navigation.css'
 
 
@@ -10,28 +10,30 @@ function Navigation() {
                 <div className='logo'>
                     <img src="/img/spotify.png" alt='' />
                 </div>
-                <ul className='navigations-components'>
-                    <li className='Navigation-component'>
-                        <NavLink to='/' exact>
-                            Acceuil
-                        </NavLink>
-                    </li>
-                    <li className='Navogation-component'>
-                        <NavLink to='/albums' exact>
-                            Albums
-                        </NavLink>
-                    </li>
-                    <li className='Navogation-component'>
-                        <NavLink to='/genres' exact>
-                            Genres
-                        </NavLink>
-                    </li>
-                    <li className='Navogation-component'>
-                        <NavLink to='/artistes' exact>
-                            Artistes
-                        </NavLink>
-                    </li>
-                </ul>
+                <Router>
+                    <ul className='navigations-components'>
+                        <li className='Navigation-component'>
+                            <NavLink to='/' exact>
+                                Acceuil
+                            </NavLink>
+                        </li>
+                        <li className='Navigation-component'>
+                            <NavLink to='/albums' exact>
+                                Albums
+                            </NavLink>
+                        </li>
+                        <li className='Navigation-component'>
+                            <NavLink to='/genres' exact>
+                                Genres
+                            </NavLink>
+                        </li>
+                        <li className='Navigation-component'>
+                            <NavLink to='/artistes' exact>
+                                Artistes
+                            </NavLink>
+                        </li>
+                    </ul>
+                </Router>
             </div>
         </div>
     )

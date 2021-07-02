@@ -16,5 +16,12 @@
     width: 100%;
 }
 .active{
-    background: gray;
+    background: rgb(42, 23, 211);
+    /* width: 100%; */
+}
+.Navigation-component a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    color: white;
 }

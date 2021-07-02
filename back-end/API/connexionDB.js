@@ -1,10 +1,9 @@
 const mysql = require('mysql');
-require('dotenv').config();
     var connection = mysql.createConnection({
-        host     : 'localhost',
-        user     : 'inconnu060217',
-        password : 'Puteaux92@',
-        database : 'my_spotify'
+        host     : process.env.HOST,
+        user     : process.env.USERDB,
+        password : process.env.PASSWORD,
+        database : process.env.DATABASE
     });
 
     connection.connect(function(err) {
