@@ -1,0 +1,53 @@
+.Detail_content{
+    background-image: linear-gradient(to bottom, #464545, #3d3c3c, #353434, #2d2c2c, #252424);
+    height: 370px;
+    color: white;
+}
+
+.detail_artist{
+    margin-left: 2rem;
+    height: 100%;
+}
+.name_artists{
+    width: 100%;
+    height: 100%;
+}
+.nameArtists{
+    padding: 0.08em 0px;
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 900;
+    letter-spacing: -.04em;
+    position: absolute;
+    margin-top: 170px;
+}
+.artists_album-container{
+    background-image: linear-gradient(to bottom, #1f1f1f, #1a1a1a, #151515, #0f0f0f, #070707);
+    /* margin-left: 2rem; */
+    color: white;
+    
+}
+.artists-album-content{
+    margin: 0 2rem;
+    display: grid;
+    justify-content: center;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fill, 233px);
+}
+.img-album-artists{
+    width: 100%;
+    height: 74%;
+    margin: 0 0 23px 0;
+}
+.img-album-a{
+    width: 100%;
+    height: 100%;
+}
+
+.artists-album{
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+    background-color: beige;
+    padding: 1rem;
+}

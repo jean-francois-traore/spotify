@@ -12,7 +12,8 @@
 .artists-content{
     position: relative;
     height: 300px;
-    background: #181818
+    background: #181818;
+    cursor: pointer;
 }
 .artists{
     padding: 16px;

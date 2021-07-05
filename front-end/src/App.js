@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import {Switch, Route } from "react-router-dom";
-import { Navigation, Genres, Albums, Acceuil, Artistes, Detail_album, Detail_genre } from "./components";
+import { Navigation, Genres, Albums, Acceuil, Artistes, Detail_album, Detail_artists } from "./components";
 
 function App() {
   return (
@@ -26,7 +26,10 @@ function App() {
           <Route path="/detail_album">
             <Detail_album />
           </Route>
-            {/* <Detail_genre /> */}
+            <Route path='/detail_artist'>
+              <Detail_artists />
+            </Route>
+
         </Switch>
       </div>
     </div>

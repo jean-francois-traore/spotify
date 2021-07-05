@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { FaCaretRight, FaRegHeart } from 'react-icons/fa'
+import { FaCaretRight, FaRegHeart } from 'react-icons/fa';
+import '../styles/Detail_artists.css'
 // import { AiTwotoneHeart } from 'react-icons/ai'
 import '../styles/Detail_album.css';
 
@@ -58,17 +59,19 @@ function Detail_album() {
                     {
                         tracks.map((track, index) =>{
                         // console.log(track)
+                        let duration = track.duration
+                        let min = (duration / 60).toFixed(2);
                             return <div key={index} className='tracks-list'>
                                 <div className='content-number-tracks'>
                                     <div className='number-tracks'>
-                                        <p className='no-track'>1</p>
+                                        <p className='no-track'>{track.track_no}</p>
                                     </div>
                                     <div className='content-tracksList'>
-                                        <p className='name-track'>arafat</p>
+                                        <p className='name-track'>{track.name}</p>
                                     </div>
                                 </div>
                                 <div className='duration-track'>
-                                    <p className='duration'>2mins</p>
+                                    <p className='duration'>{min}</p>
                                 </div>
                             </div>
                         })
