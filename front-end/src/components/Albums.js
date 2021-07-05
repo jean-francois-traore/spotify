@@ -6,7 +6,7 @@ import {useHistory} from 'react-router-dom';
 function Albums() {
     const [albums, setAlbums] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
-    const [albumsPerPage, setAlbumsPerPage] = useState(30);
+    const [albumsPerPage, setAlbumsPerPage] = useState(40);
     let history = useHistory();
     useEffect(() => {
             if(!albums){
@@ -15,15 +15,14 @@ function Albums() {
                     .then(res => setAlbums(res))
             }
     }, [albums]);
-    if(!albums) return <div>Chargement...</div>
     // ces trois variable = on recupere le nombre d'element a afficher par cette calcul et on slice pour afficher entre ces nombre
     const indexOfLastAlbums = currentPage * albumsPerPage;
     const indexOfFirtsAlbums = indexOfLastAlbums - albumsPerPage;
-    const currentAlbums = albums.slice(indexOfFirtsAlbums, indexOfLastAlbums);
-    const handleId = (name) => {
-        history.push(`/detail_album/${name}`);
-        console.log(name);
+    const currentAlbums = albums ? albums.slice(indexOfFirtsAlbums, indexOfLastAlbums) : null;
+    const handleId = (id) => {
+        history.push(`/detail_album/${id}`);
     }
+    if(!albums) return <div>Chargement...</div>
     return (
         <>
             <div className="albums-container">
@@ -42,10 +41,10 @@ function Albums() {
             </div>
             <div className='paginations-albums'>
                 <Paginations 
-                albumsPerPage={albumsPerPage} 
-                totalAlbums={albums.length}
-                setCurrentPage={setCurrentPage}
+                elementPerPage={albumsPerPage} 
+                totalElement={albums.length}
                 currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
                 />
             </div>
         </>

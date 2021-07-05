@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Pagination.css';
 
-function Paginations({albumsPerPage, totalAlbums, setCurrentPage, currentPage}) {
+function Paginations({elementPerPage, totalElement, setCurrentPage, currentPage}) {
     //nombre de pages 10 !
     const [pageNumberLimit, setPageNumberLimit] = useState(10);
     // Nombre maximum 10 pages
@@ -11,7 +11,7 @@ function Paginations({albumsPerPage, totalAlbums, setCurrentPage, currentPage}) 
     const pageNumbers = [];
 
     // cette boucle =  on parcour le nombre total d'album en divisant par le nombre d'album qu'on veut affiche par page
-    for(let i=1; i<=Math.ceil(totalAlbums / albumsPerPage); i++){
+    for(let i=1; i<=Math.ceil(totalElement / elementPerPage); i++){
         pageNumbers.push(i)
     }
 

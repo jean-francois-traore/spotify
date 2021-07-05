@@ -4,3 +4,5 @@ export { default as Genres } from "./Genres";
 export { default as Acceuil } from "./Acceuil";
 export { default as Navigation } from "./Navigation";
 export { default as Detail_album } from "./Detail_album";
+export { default as Detail_genre } from "./Detail_genre";
+
