@@ -33,7 +33,7 @@ function Detail_artists() {
                                     <img src={detailArtist.photo} />
                                 </div>
                                 <div className='infos-artist'>
-                                <p className='artist'>Artiste</p>
+                                <p className='name-artist'>Artiste</p>
                                     <p className='name_artist'>{detailArtist.name}</p>
                                 </div>
                             </div>

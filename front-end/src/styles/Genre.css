@@ -1,14 +1,14 @@
 .genre-container{
     color: white;
-    margin: 0 2rem;
+    margin: 0 5rem;
     display: grid;
-    grid-gap: 17px;
+    grid-gap: 45px;
     grid-template-columns: repeat(auto-fill, 215px);
     justify-content: space-between;
 }
 .genre-content{
     position: relative;
-    height: 300px;
-    background: #181818;
+    height: 240px;
     cursor: pointer;
+    border-radius: 10%;
 }

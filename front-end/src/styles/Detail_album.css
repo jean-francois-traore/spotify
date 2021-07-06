@@ -92,3 +92,13 @@
     width: 2%;
     display: flex;
 }
+.name-track{
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+.duration{
+    height: 30px;
+}
+.content-tracksList{
+    margin: 0 0 0 4px;
+}

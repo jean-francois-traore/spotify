@@ -37,6 +37,7 @@
 .artist{
     margin-top: 0.5rem;
     color: rgb(179, 179, 179);
+    font-size: 15px;
 }
 .paginations-artists {
     margin-top: 2rem;
