@@ -1,31 +1,26 @@
-.Detail_artists_container{
+.detail-genre-container{
     color: white;
 }
-
-.infos-artists{
+.infos-genre{
     background-image: linear-gradient(to bottom, #464545, #3d3c3c, #353434, #2d2c2c, #252424);
     height: 320px;
 }
-.detail-artists{
+.detail-detail{
     display: flex;
     width: 80%;
     margin-left: 2rem;
 }
-.img-artist{
+.img-genre{
     width: 250px;
     margin-top: 50px;
+    /* background: #181818;
+    height: 220px; */
 }
-
-.img-artist img{
+.img-genre img{
     width: 100%;
     height: 255px;
 }
-.artist{
-    margin-left: 29px;
-    margin-top: 120px;
-    font-size: 26px;
-}
-.name_artist{
+.name-genre{
     font-size: 39px;
     line-height: 96px;
     width: 100%;
@@ -33,7 +28,15 @@
     margin-top: 8px;
     font-weight: 900;
 }
-.all-albums-artists{
+.genre{
+    margin-left: 29px;
+    margin-top: 120px;
+    font-size: 26px;
+}
+/* .genre_album-container{
+    
+} */
+.all-albums-genre{
     margin: 2rem 2rem;
     color: #fff;
     font-size: 24px;
@@ -41,26 +44,19 @@
     letter-spacing: -.04em;
     line-height: 28px;
 }
-.artists-album-content{
+.genre-album-content{
     margin: 0 2rem;
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, 233px);
+    justify-content: space-around;
 }
-.img-album-artists{
+.img-album-genre{
     width: 100%;
     height: 74%;
     margin: 0 0 23px 0;
 }
-.img-album-a{
+.img-album-g{
     width: 100%;
     height: 100%;
-}
-
-.artists-album{
-    position: relative;
-    height: 300px;
-    cursor: pointer;
-    background: #181818;
-    padding: 1rem;
 }

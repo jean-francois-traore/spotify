@@ -8,3 +8,4 @@ export { default as Detail_genre } from "./Detail_genre";
 export { default as Detail_artists } from "./Detail_artists";
 
 
+
