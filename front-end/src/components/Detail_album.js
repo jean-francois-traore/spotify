@@ -70,11 +70,11 @@ function Detail_album() {
                                         <p className='name-track'>{track.name}</p>
                                     </div>
                                 </div>
-                                {/* <div className='duration-track'>
+                                <div className='duration-track'>
                                     <audio controls  className='duration'>
                                         <source src={track.mp3} type='audio/mp3' />
                                     </audio>
-                                </div> */}
+                                </div>
                             </div>
                         })
                     }
